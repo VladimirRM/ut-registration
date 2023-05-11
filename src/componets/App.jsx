@@ -1,6 +1,7 @@
 
 import './App.css';
-import NavBar from './componets/NavBar/NavBar';
+import NavBar from './NavBar/NavBar';
+import './App.less'
 
 function App() {
   return (
