@@ -1,11 +1,12 @@
-import React from 'react';
+// import React from 'react';
+// import  './Input.scss'
 
-const Input = () => {
-    return (
-        <div>
+// const Input = () => {
+//     return (
+//         <div>
             
-        </div>
-    );
-};
+//         </div>
+//     );
+// };
 
-export default Input;
+// export default Input;
