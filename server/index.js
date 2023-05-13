@@ -7,12 +7,18 @@ const app =express()
 const PORT = config.get('serverPort')
 
 
-const start = ()=>{
+
+       const start =  async ()=>{
     try{
-       
-        
-        app.listen()
+         await mongoose.connect(config.get("dbUrl"))
+
+
+        app.listen(PORT,()=>{
+            console.log('server started on port', PORT)
+        })
     }catch(e){
         console.log(e)
     }
 }
+
+start()
