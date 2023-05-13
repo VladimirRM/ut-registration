@@ -1,1 +1,18 @@
-console.log('hello')
+const express = require('express')
+const mongoose = require('mongoose')
+const config = require( 'config')
+
+
+const app =express()
+const PORT = config.get('serverPort')
+
+
+const start = ()=>{
+    try{
+       
+        
+        app.listen()
+    }catch(e){
+        console.log(e)
+    }
+}
