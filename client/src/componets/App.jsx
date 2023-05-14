@@ -13,6 +13,7 @@ function App() {
       <Routes>
 
         <Route path='/registration' element={<Registration/>} />
+        <Route path='/' element={<App/>} />
 
 
       </Routes>
