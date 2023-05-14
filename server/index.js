@@ -1,12 +1,13 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const config = require( 'config')
+const config = require('config')
 
 
 const authRouter = require('./Routes/auth.routes')
 const app =express()
 const PORT = config.get('serverPort')
 
+app.use(express.json())
 app.use("/api/auth",authRouter)
 
 
