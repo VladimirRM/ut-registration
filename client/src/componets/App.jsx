@@ -1,5 +1,5 @@
 import React from 'react';
-import   {Routes,Route,} from "react-router-dom"
+import { Routes, Route, } from "react-router-dom"
 
 import Registration from './registration/Registration';
 
@@ -8,14 +8,15 @@ import Navbar from './navbar/Navbar';
 function App() {
   return (
     <div className="app">
-    <Navbar/>
+      <Navbar />
 
-    <Routes>
+      <Routes>
 
-        <Route path='/registration' component={Registration}/>
+        <Route path='/registration' element={<Registration/>} />
 
-       
-    </Routes>
+
+      </Routes>
+
     </div>
 
   );

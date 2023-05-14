@@ -1,11 +1,12 @@
 import React from 'react';
-import  './Input.scss'
+import './Input.scss'
 
 const Input = (props) => {
     return (
-        <div>
-            <input onChange={(event)=> props.setValue(event.target.value)} value={props.value} type={props.type} placeholder={props.placeholder} />
-        </div>
+        <input onChange={(event)=> props.setValue(event.target.value)}
+               value={props.value}
+               type={props.type}
+               placeholder={props.placeholder}/>
     );
 };
 
