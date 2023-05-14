@@ -45,7 +45,13 @@ async (req,res)=>{
      if(!user){
         return res.status(400).json({message:"User not found"})
      } 
-  
+      const isPassValid = bcrypt.compareSync(password, user.password)
+      if(!isPassValid){
+        return res.status(400).json({message:"Invalid password"})
+
+      }
+
+      const token = jwt.sign({id:user.id})
       }catch(e){
         console.log(e)
         res.send({message:"Server error"})
