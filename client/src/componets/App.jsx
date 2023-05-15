@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, } from "react-router-dom"
 
 import Registration from './registration/Registration';
+import Login from './autorization/Login';
 
 import Navbar from './navbar/Navbar';
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
 
         <Route path='/registration' element={<Registration/>} />
+        <Route path='/login' element={<Login/>} />
         <Route path='/' element={<App/>} />
 
 
